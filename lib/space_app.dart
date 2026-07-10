@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapp/core/utils/app_colors.dart';
+import 'package:spaceapp/features/home/home_screen.dart';
 import 'package:spaceapp/features/splash_screen/splash_screen.dart';
 
 class SpaceApp extends StatelessWidget {
@@ -11,7 +12,8 @@ class SpaceApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: AppColors.black),
       routes: {
-        SplashScreen.routeName : (context) => SplashScreen()
+        SplashScreen.routeName : (context) => SplashScreen(),
+        HomeScreen.routeName :(context) => HomeScreen()
       },
       initialRoute: SplashScreen.routeName,
     );

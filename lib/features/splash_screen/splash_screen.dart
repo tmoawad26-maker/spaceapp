@@ -3,6 +3,7 @@ import 'package:spaceapp/core/utils/app_colors.dart';
 import 'package:spaceapp/core/utils/app_images.dart';
 import 'package:spaceapp/core/utils/app_strings.dart';
 import 'package:spaceapp/core/utils/widgets/explore_button.dart';
+import 'package:spaceapp/features/home/home_screen.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});
@@ -48,7 +49,9 @@ class SplashScreen extends StatelessWidget {
                     bottom: 16,
                   ),
                   child: ExploreButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(HomeScreen.routeName);
+                    },
                     textButton: AppStrings.explore,
                   ),
                 ),
