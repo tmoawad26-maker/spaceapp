@@ -5,6 +5,10 @@ class SplashScreen extends StatelessWidget {
   static const String routeName = '/splashscreen';
   @override
   Widget build(BuildContext context) {
-    return const Scaffold();
+    return SafeArea(
+      child: const Scaffold(
+      
+      ),
+    );
   }
 }
