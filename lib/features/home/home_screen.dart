@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:spaceapp/core/utils/app_strings.dart';
-import 'package:spaceapp/core/utils/widgets/explore_button.dart';
-import 'package:spaceapp/features/home/models/planet_model.dart';
 import 'package:spaceapp/features/home/widgets/custom_app_bar.dart';
 import 'package:spaceapp/features/home/widgets/planet_page_view.dart';
 

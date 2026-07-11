@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapp/core/utils/app_colors.dart';
 import 'package:spaceapp/features/home/home_screen.dart';
+import 'package:spaceapp/features/planet_details/screens/planet_details_screen.dart';
 import 'package:spaceapp/features/splash_screen/splash_screen.dart';
 
 class SpaceApp extends StatelessWidget {
@@ -13,7 +14,8 @@ class SpaceApp extends StatelessWidget {
       theme: ThemeData(scaffoldBackgroundColor: AppColors.black),
       routes: {
         SplashScreen.routeName : (context) => SplashScreen(),
-        HomeScreen.routeName :(context) => HomeScreen()
+        HomeScreen.routeName :(context) => HomeScreen(),
+        PlanetDetailsScreen.routeName :(context) => PlanetDetailsScreen()
       },
       initialRoute: SplashScreen.routeName,
     );

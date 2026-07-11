@@ -4,6 +4,7 @@ import 'package:spaceapp/core/utils/app_strings.dart';
 import 'package:spaceapp/core/utils/widgets/custom_arrow_button.dart';
 import 'package:spaceapp/core/utils/widgets/explore_button.dart';
 import 'package:spaceapp/features/home/models/planet_model.dart';
+import 'package:spaceapp/features/planet_details/screens/planet_details_screen.dart';
 
 class ViewPlanetWidget extends StatelessWidget {
   const ViewPlanetWidget({
@@ -73,7 +74,9 @@ class ViewPlanetWidget extends StatelessWidget {
               alignment: Alignment.bottomCenter,
               child: ExploreButton(
                 textButton: '${AppStrings.explore} $palnet',
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.of(context).pushNamed(PlanetDetailsScreen.routeName);
+                },
               ),
             ),
           ),
