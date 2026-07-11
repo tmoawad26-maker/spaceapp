@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapp/core/utils/app_colors.dart';
+import 'package:spaceapp/features/home/models/planet_model.dart';
 
 class ExploreButton extends StatelessWidget {
   const ExploreButton({

@@ -7,6 +7,7 @@ abstract class AppStrings {
 
   // Planets (in order from the Sun)
   static const mercury = 'Mercury';
+  static const earth2 = 'Earth 2';
   static const venus = 'Venus';
   static const earth = 'Earth';
   static const mars = 'Mars';
