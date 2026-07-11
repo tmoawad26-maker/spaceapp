@@ -1,48 +1,49 @@
 // ignore_for_file: prefer_single_quotes
 class AppImages {
   AppImages._();
+  
+  /// Assets for imagesPngEarth
+  /// assets/images/png/earth.png
+  static const String imagesPngEarth = "assets/images/png/earth.png";
 
-  /// Assets for imagesEarth
-  /// assets/images/earth.png
-  static const String imagesEarth = "assets/images/earth.png";
+  /// Assets for imagesPngEarth 2
+  /// assets/images/png/earth 2.png
+  static const String imagesPngEarth2 = "assets/images/png/earth 2.png";
 
-  /// Assets for imagesEarth 2
-  /// assets/images/earth 2.png
-  static const String imagesEarth2 = "assets/images/earth 2.png";
+  /// Assets for imagesPngJupiter
+  /// assets/images/png/jupiter.png
+  static const String imagesPngJupiter = "assets/images/png/jupiter.png";
 
-  /// Assets for imagesJupiter
-  /// assets/images/jupiter.png
-  static const String imagesJupiter = "assets/images/jupiter.png";
+  /// Assets for imagesPngMars
+  /// assets/images/png/mars.png
+  static const String imagesPngMars = "assets/images/png/mars.png";
 
-  /// Assets for imagesMars
-  /// assets/images/mars.png
-  static const String imagesMars = "assets/images/mars.png";
+  /// Assets for imagesPngMercury
+  /// assets/images/png/mercury.png
+  static const String imagesPngMercury = "assets/images/png/mercury.png";
 
-  /// Assets for imagesMercury
-  /// assets/images/mercury.png
-  static const String imagesMercury = "assets/images/mercury.png";
+  /// Assets for imagesPngNeptune
+  /// assets/images/png/neptune.png
+  static const String imagesPngNeptune = "assets/images/png/neptune.png";
 
-  /// Assets for imagesNeptune
-  /// assets/images/neptune.png
-  static const String imagesNeptune = "assets/images/neptune.png";
+  /// Assets for imagesPngSaturn
+  /// assets/images/png/saturn.png
+  static const String imagesPngSaturn = "assets/images/png/saturn.png";
 
-  /// Assets for imagesSaturn
-  /// assets/images/saturn.png
-  static const String imagesSaturn = "assets/images/saturn.png";
+  /// Assets for imagesPngSun
+  /// assets/images/png/sun.png
+  static const String imagesPngSun = "assets/images/png/sun.png";
 
-  /// Assets for imagesSun
-  /// assets/images/sun.png
-  static const String imagesSun = "assets/images/sun.png";
+  /// Assets for imagesPngUniverse
+  /// assets/images/png/universe.png
+  static const String imagesPngUniverse = "assets/images/png/universe.png";
 
-  /// Assets for imagesUniverse
-  /// assets/images/universe.png
-  static const String imagesUniverse = "assets/images/universe.png";
+  /// Assets for imagesPngUranus
+  /// assets/images/png/uranus.png
+  static const String imagesPngUranus = "assets/images/png/uranus.png";
 
-  /// Assets for imagesUranus
-  /// assets/images/uranus.png
-  static const String imagesUranus = "assets/images/uranus.png";
-
-  /// Assets for imagesVenus
-  /// assets/images/venus.png
-  static const String imagesVenus = "assets/images/venus.png";
+  /// Assets for imagesPngVenus
+  /// assets/images/png/venus.png
+  static const String imagesPngVenus = "assets/images/png/venus.png";
 }
+
