@@ -1,6 +1,7 @@
 abstract class AppStrings {
   static const exploreUniverseText = 'Explore The Universe';
   static const explore = 'Explore';
+  static const explorePlanet = 'Which planet would you like to explore?';
   // Sun
   static const sun = 'Sun';
 

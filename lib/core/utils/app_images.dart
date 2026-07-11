@@ -45,5 +45,6 @@ class AppImages {
   /// Assets for imagesPngVenus
   /// assets/images/png/venus.png
   static const String imagesPngVenus = "assets/images/png/venus.png";
+  static const String imagesPngRectangle = "assets/images/png/Rectangle 4.png";
 }
 

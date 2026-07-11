@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapp/core/utils/app_colors.dart';
 import 'package:spaceapp/core/utils/app_images.dart';
+import 'package:spaceapp/core/utils/app_strings.dart';
+import 'package:spaceapp/features/home/widgets/custom_app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,16 +10,14 @@ class HomeScreen extends StatelessWidget {
   @override   
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: Column(
-        children: [
-          // Container(
-          //   decoration: BoxDecoration(
-          //     color: AppColors.black,
-          //     image: DecorationImage(image: AssetImage(AppImages.))
-          //   ),
-          // )
-        ],
+      body: SafeArea(
+        child: Column(
+          children: [
+            CustomAppBar()
+          ],
+        ),
       ),
     );
   }
 }
+
