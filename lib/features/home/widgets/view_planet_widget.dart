@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapp/core/utils/app_colors.dart';
 import 'package:spaceapp/core/utils/app_images.dart';
+import 'package:spaceapp/core/utils/widgets/custom_arrow_button.dart';
 
 class ViewPlanetWidget extends StatelessWidget {
   const ViewPlanetWidget({super.key});
@@ -17,14 +18,7 @@ class ViewPlanetWidget extends StatelessWidget {
           Row(
             mainAxisAlignment: .spaceBetween,
             children: [
-              IconButton(
-                onPressed: () {},
-                style: IconButton.styleFrom(
-                  foregroundColor: AppColors.white,
-                  backgroundColor: AppColors.red,
-                ),
-                icon: Icon(Icons.arrow_back),
-              ),
+              CustomArrowButton(icon: Icon(Icons.arrow_back,),onPressed: (){},),
               Text(
                 'Earth',
                 style: TextStyle(
@@ -33,14 +27,7 @@ class ViewPlanetWidget extends StatelessWidget {
                   fontWeight: .w700,
                 ),
               ),
-              IconButton(
-                style: IconButton.styleFrom(
-                  foregroundColor: AppColors.white,
-                  backgroundColor: AppColors.red,
-                ),
-                onPressed: () {},
-                icon: Icon(Icons.arrow_forward),
-              ),
+              CustomArrowButton(icon: Icon(Icons.arrow_forward), onPressed: (){})
             ],
           ),
         ],
@@ -48,3 +35,4 @@ class ViewPlanetWidget extends StatelessWidget {
     );
   }
 }
+
