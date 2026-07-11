@@ -50,7 +50,7 @@ class CustomAppBar extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(left: 20.0, right: 69.0),
               child: Text(
-                AppStrings.explorePlanet,
+                AppStrings.explorePlanetDesc,
                 style: TextStyle(
                   color: AppColors.white,
                   fontSize: 24,
