@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:spaceapp/core/utils/app_colors.dart';
-import 'package:spaceapp/core/utils/app_images.dart';
-import 'package:spaceapp/core/utils/app_strings.dart';
-import 'package:spaceapp/core/utils/widgets/custom_arrow_button.dart';
+import 'package:flutter_3d_controller/flutter_3d_controller.dart';
 import 'package:spaceapp/features/planet_details/widgets/custom_app_bar_planet_details.dart';
+import 'package:spaceapp/features/planet_details/widgets/custom_image_3d_model_widget.dart';
 
 class PlanetDetailsScreen extends StatelessWidget {
   const PlanetDetailsScreen({super.key});
@@ -15,11 +13,15 @@ class PlanetDetailsScreen extends StatelessWidget {
         child: Column(
           children: [
              CustomAppBarPlanetDetails(),
-             
+            SizedBox(height: 9,),
+            //The 3D viewer widget for glb and gltf format
+            Expanded(child: CustomImage3DModelWidget(flutter3dController: Flutter3DController(),))
+
           ],
         ),
       ),
     );
   }
 }
+
 

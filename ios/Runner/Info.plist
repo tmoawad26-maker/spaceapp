@@ -27,6 +27,7 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIApplicationSceneManifest</key>
+	<key>io.flutter.embedded_views_preview</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>

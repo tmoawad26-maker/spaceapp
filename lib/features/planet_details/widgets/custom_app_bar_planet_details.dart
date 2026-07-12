@@ -16,7 +16,7 @@ class CustomAppBarPlanetDetails extends StatelessWidget {
           height: 237,
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage(AppImages.imagesPngRectangle),
+              image: AssetImage(AppImages.imagesPngRectangle4),
               fit: BoxFit.cover,
             ),
             gradient: LinearGradient(

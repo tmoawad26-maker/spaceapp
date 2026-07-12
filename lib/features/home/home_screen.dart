@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:spaceapp/core/utils/app_colors.dart';
 import 'package:spaceapp/core/utils/app_strings.dart';
 import 'package:spaceapp/features/home/widgets/custom_app_bar.dart';
 import 'package:spaceapp/features/home/widgets/planet_page_view.dart';
