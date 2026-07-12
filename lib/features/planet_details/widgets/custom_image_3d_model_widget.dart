@@ -4,9 +4,10 @@ import 'package:spaceapp/core/utils/app_images.dart';
 
 class CustomImage3DModelWidget extends StatelessWidget {
   const CustomImage3DModelWidget({
-    super.key, required this.flutter3dController,
+    super.key, required this.flutter3dController,required  this.imagePath,
   });
     final Flutter3DController flutter3dController;
+    final String imagePath;
   @override
   Widget build(BuildContext context) {
     return Flutter3DViewer(
@@ -16,14 +17,14 @@ class CustomImage3DModelWidget extends StatelessWidget {
         activeGestureInterceptor: true,
         //If you don't pass progressBarColor, the color of defaultLoadingProgressBar will be grey.
         //You can set your custom color or use [Colors.transparent] for hiding loadingProgressBar.
-        progressBarColor: Colors.orange,
+        progressBarColor: Colors.transparent,
         //You can disable viewer touch response by setting 'enableTouch' to 'false'
         enableTouch: false,
         //This callBack will return the loading progress value between 0 and 1.0
         onProgress: (double progressValue) {
           debugPrint('model loading progress : $progressValue');
         },
-        //This callBack will call after model loaded successfully and will return model address
+        // This callBack will call after model loaded successfully and will return model address
         onLoad: (String modelAddress) {
           debugPrint('model loaded : $modelAddress');
         },
@@ -33,7 +34,7 @@ class CustomImage3DModelWidget extends StatelessWidget {
         },
         //You can have full control of 3d model animations, textures and camera
         controller: flutter3dController,
-        src: AppImages.imagesGlbEarth
+        src: imagePath
          //3D model with different animations
         //src: 'assets/sheen_chair.glb', //3D model with different textures
         //src: 'https://modelviewer.dev/shared-assets/models/Astronaut.glb', // 3D model from URL

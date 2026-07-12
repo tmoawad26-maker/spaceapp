@@ -26,7 +26,7 @@ class ViewPlanetWidget extends StatelessWidget {
           decoration: BoxDecoration(color: AppColors.black),
           child: Column(
             children: [
-              Expanded(child: Image.asset(planetModel.planetImagePath!)),
+              Expanded(child: Image.asset(planetModel.planetImagePngPath!)),
               Row(
                 mainAxisAlignment: .spaceBetween,
                 children: [
@@ -75,7 +75,15 @@ class ViewPlanetWidget extends StatelessWidget {
               child: ExploreButton(
                 textButton: '${AppStrings.explore} $palnet',
                 onPressed: () {
-                  Navigator.of(context).pushNamed(PlanetDetailsScreen.routeName);
+                  Navigator.of(context).pushNamed(
+                    PlanetDetailsScreen.routeName,
+                    arguments: PlanetModel(
+                      planetName: planetModel.planetName,
+                      planetTitle: planetModel.planetTitle,
+                      planetGlbPath: planetModel.planetGlbPath,
+                      planetDesc: planetModel.planetDesc
+                    ),
+                  );
                 },
               ),
             ),

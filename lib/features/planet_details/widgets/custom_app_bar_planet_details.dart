@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapp/core/utils/app_colors.dart';
 import 'package:spaceapp/core/utils/app_images.dart';
-import 'package:spaceapp/core/utils/app_strings.dart';
+
 import 'package:spaceapp/core/utils/widgets/custom_arrow_button.dart';
 
 class CustomAppBarPlanetDetails extends StatelessWidget {
-  const CustomAppBarPlanetDetails({super.key});
-
+  const CustomAppBarPlanetDetails({
+    super.key,
+    required this.planetName,
+     this.planetTitle,
+  });
+  final String planetName;
+  final String? planetTitle;
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -32,7 +37,7 @@ class CustomAppBarPlanetDetails extends StatelessWidget {
           child: Align(
             alignment: Alignment.topCenter,
             child: Text(
-              AppStrings.earth,
+              planetName,
               style: TextStyle(
                 color: AppColors.white,
                 fontSize: 24,
@@ -50,7 +55,9 @@ class CustomAppBarPlanetDetails extends StatelessWidget {
             alignment: Alignment.topLeft,
             child: CustomArrowButton(
               icon: Icon(Icons.arrow_back),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
             ),
           ),
         ),
@@ -64,7 +71,7 @@ class CustomAppBarPlanetDetails extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(left: 18.0, right: 112),
               child: Text(
-                'Earth: Our Blue Marble',
+               planetTitle!,
                 style: TextStyle(
                   color: AppColors.white,
                   fontSize: 24,
