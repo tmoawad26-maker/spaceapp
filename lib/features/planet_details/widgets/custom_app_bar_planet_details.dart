@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:spaceapp/core/utils/app_colors.dart';
 import 'package:spaceapp/core/utils/app_images.dart';
+import 'package:spaceapp/core/utils/app_strings.dart';
+import 'package:spaceapp/core/utils/widgets/custom_arrow_button.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({
-    super.key,
-    required this.exploreTitle,
-    required this.exploreDesc,
-  });
-  final String exploreTitle, exploreDesc;
-  
+class CustomAppBarPlanetDetails extends StatelessWidget {
+  const CustomAppBarPlanetDetails({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -35,12 +32,25 @@ class CustomAppBar extends StatelessWidget {
           child: Align(
             alignment: Alignment.topCenter,
             child: Text(
-              exploreTitle,
+              AppStrings.earth,
               style: TextStyle(
                 color: AppColors.white,
                 fontSize: 24,
                 fontWeight: .w700,
               ),
+            ),
+          ),
+        ),
+        Positioned(
+          left: 0,
+          top: 0,
+          right: 0,
+          bottom: 0,
+          child: Align(
+            alignment: Alignment.topLeft,
+            child: CustomArrowButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {},
             ),
           ),
         ),
@@ -52,9 +62,9 @@ class CustomAppBar extends StatelessWidget {
           child: Align(
             alignment: Alignment.bottomLeft,
             child: Padding(
-              padding: const EdgeInsets.only(left: 20.0, right: 69.0),
+              padding: const EdgeInsets.only(left: 18.0, right: 112),
               child: Text(
-                exploreDesc,
+                'Earth: Our Blue Marble',
                 style: TextStyle(
                   color: AppColors.white,
                   fontSize: 24,
