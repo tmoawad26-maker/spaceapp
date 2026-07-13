@@ -5,7 +5,6 @@ import 'package:spaceapp/core/utils/app_strings.dart';
 import 'package:spaceapp/features/home/models/planet_model.dart';
 import 'package:spaceapp/features/planet_details/widgets/custom_app_bar_planet_details.dart';
 import 'package:spaceapp/features/planet_details/widgets/custom_image_3d_model_widget.dart';
-import 'package:spaceapp/features/planet_details/widgets/planet_info_list_view.dart';
 import 'package:spaceapp/features/planet_details/widgets/planet_info_widget.dart';
 
 class PlanetDetailsScreen extends StatelessWidget {
@@ -46,6 +45,7 @@ class PlanetDetailsScreen extends StatelessWidget {
                 ),
               ),
             ),
+            SizedBox(height: 15,),
             Expanded(
               child: Align(
                 alignment: .topLeft,
