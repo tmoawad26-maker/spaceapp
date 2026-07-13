@@ -15,7 +15,7 @@ class PlanetInfoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 10.0, bottom: 10),
+      padding: const EdgeInsets.only(left: 10.0,bottom: 10),
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: .start,
@@ -29,29 +29,43 @@ class PlanetInfoWidget extends StatelessWidget {
               ),
             ),
             SizedBox(height: 15),
-            TextAlignWidget(
-              planetInfoDesc: planetInfoModel.distanceSun,
-              planetInfoTitle: AppStrings.distanceFromSun,
+          Text('${AppStrings.distanceFromSun} : ${planetInfoModel.distanceSun}',
+            style: TextStyle(
+              color: AppColors.white,
+              fontSize: 16,
+              fontWeight: .w700,
             ),
-            TextAlignWidget(
-              planetInfoTitle: AppStrings.orbitalPeriod,
-              planetInfoDesc: planetInfoModel.orbitalPeriod,
+          ),
+            Text(
+              '${AppStrings.orbitalPeriod} : ${planetInfoModel.orbitalPeriod}',
+              style: TextStyle(color: AppColors.white , fontSize: 16,
+                fontWeight: .w700),
             ),
-            TextAlignWidget(
-              planetInfoTitle: AppStrings.radius,
-              planetInfoDesc: planetInfoModel.radius,
+            Text(
+              '${AppStrings.radius} : ${planetInfoModel.radius}',
+              style: TextStyle(color: AppColors.white,
+              fontSize: 16,
+                fontWeight: .w700
+              ),
             ),
-            TextAlignWidget(
-              planetInfoTitle: AppStrings.mass,
-              planetInfoDesc: planetInfoModel.mass,
+            Text(
+              '${AppStrings.mass} : ${planetInfoModel.mass}',
+              style: TextStyle(color: AppColors.white,
+                fontSize: 16,
+                fontWeight: .w700
+              ),
             ),
-            TextAlignWidget(
-              planetInfoTitle: AppStrings.gravity,
-              planetInfoDesc: planetInfoModel.gravity,
+            Text(
+              '${AppStrings.gravity} : ${planetInfoModel.gravity}',
+              style: TextStyle(color: AppColors.white,
+              fontSize: 16,
+                fontWeight: .w700
+              ),
             ),
-            TextAlignWidget(
-              planetInfoTitle: AppStrings.surfaceArea,
-              planetInfoDesc: planetInfoModel.surfaceAreay,
+            Text(
+              '${AppStrings.surfaceArea} : ${planetInfoModel.surfaceAreay}',
+              style: TextStyle(color: AppColors.white,fontSize: 16,
+                fontWeight: .w700),
             ),
           ],
         ),
@@ -59,3 +73,4 @@ class PlanetInfoWidget extends StatelessWidget {
     );
   }
 }
+
