@@ -42,7 +42,7 @@ class PlanetInfoWidget extends StatelessWidget {
               style: TextStyle(color: AppColors.white , fontSize: 16,
                 fontWeight: .w700),
             ),
-            SizedBox(height: 36,),
+            SizedBox(height: 6,),
             Text(
               '${AppStrings.radius} : ${planetInfoModel.radius}',
               style: TextStyle(color: AppColors.white,
@@ -50,7 +50,7 @@ class PlanetInfoWidget extends StatelessWidget {
                 fontWeight: .w700
               ),
             ),
-            SizedBox(height: 36,),
+            SizedBox(height: 6,),
             Text(
               '${AppStrings.mass} : ${planetInfoModel.mass}',
               style: TextStyle(color: AppColors.white,
@@ -58,7 +58,7 @@ class PlanetInfoWidget extends StatelessWidget {
                 fontWeight: .w700
               ),
             ),
-            SizedBox(height: 36,),
+            SizedBox(height: 6,),
             Text(
               '${AppStrings.gravity} : ${planetInfoModel.gravity}',
               style: TextStyle(color: AppColors.white,
@@ -66,7 +66,7 @@ class PlanetInfoWidget extends StatelessWidget {
                 fontWeight: .w700
               ),
             ),
-            SizedBox(height: 36,),
+            SizedBox(height: 6,),
             Text(
               '${AppStrings.surfaceArea} : ${planetInfoModel.surfaceAreay}',
               style: TextStyle(color: AppColors.white,fontSize: 16,
