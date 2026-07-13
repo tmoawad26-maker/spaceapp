@@ -4,6 +4,7 @@ import 'package:spaceapp/core/utils/app_strings.dart';
 import 'package:spaceapp/core/utils/widgets/custom_arrow_button.dart';
 import 'package:spaceapp/core/utils/widgets/explore_button.dart';
 import 'package:spaceapp/features/home/models/planet_model.dart';
+import 'package:spaceapp/features/planet_details/models/planet_info_model.dart';
 import 'package:spaceapp/features/planet_details/screens/planet_details_screen.dart';
 
 class ViewPlanetWidget extends StatelessWidget {
@@ -11,7 +12,7 @@ class ViewPlanetWidget extends StatelessWidget {
     super.key,
     required this.planetModel,
     required this.pageController,
-    required this.palnet,
+    required this.palnet
   });
   final PlanetModel planetModel;
   final PageController pageController;
@@ -81,7 +82,16 @@ class ViewPlanetWidget extends StatelessWidget {
                       planetName: planetModel.planetName,
                       planetTitle: planetModel.planetTitle,
                       planetGlbPath: planetModel.planetGlbPath,
-                      planetDesc: planetModel.planetDesc
+                      planetDesc: planetModel.planetDesc,
+                      planetInfoModel: PlanetInfoModel(
+                        distanceSun: planetModel.planetInfoModel!.distanceSun,
+                        lengthDay: planetModel.planetInfoModel!.lengthDay,
+                        orbitalPeriod: planetModel.planetInfoModel!.orbitalPeriod,
+                        radius: planetModel.planetInfoModel!.radius,
+                        gravity: planetModel.planetInfoModel!.gravity,
+                        mass: planetModel.planetInfoModel!.mass,
+                        surfaceAreay: planetModel.planetInfoModel!.surfaceAreay,
+                      ),
                     ),
                   );
                 },

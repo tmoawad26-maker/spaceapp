@@ -71,13 +71,13 @@ abstract class AppStrings {
   static const String neptuneDescription =
       "Neptune is the farthest planet from the Sun and is another ice giant. Its atmosphere is similar to Uranus, but it is a deeper blue color due to the presence of methane. Neptune has several moons, including Triton, which orbits the planet in a retrograde direction and is believed to be a captured Kuiper Belt object.";
   static const about = 'About';
-  static const distanceFromSun = 'Distance from Sun (km): ';
-  static const lengthDay = 'Length of Day (hours): ';
-  static const orbitalPeriod = 'Orbital Period (Earth years):';
-  static const radius = 'Radius (km): ';
-  static const mass = 'Mass (kg): ';
-  static const gravity = 'Gravity (m/s²): ';
-  static const surfaceArea = 'Surface Area (km²): ';
+  static const distanceFromSun = 'Distance from Sun (km)';
+  static const lengthDay = 'Length of Day (hours)';
+  static const orbitalPeriod = 'Orbital Period (Earth years)';
+  static const radius = 'Radius (km)';
+  static const mass = 'Mass (kg)';
+  static const gravity = 'Gravity (m/s²)';
+  static const surfaceArea = 'Surface Area (km²)';
   // Physical & orbital data
   // Distance from Sun (km)
   static const String sunDistanceFromSun = '0';
